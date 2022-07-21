@@ -1,0 +1,114 @@
+$bg-c1-primary: #2a73dd;
+
+/*-----------text: css cho text--------------*/
+// text-color: màu của text
+$text-c1-primary: #2a73dd;
+$text-c1-dark: #000;
+$text-c1-title: #ffd700;
+$text-c1-err: #ff0000;
+// text-size
+$text-xs: 10px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+//  text-font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+
+$color-border: #c0c0c0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+@mixin text($fs, $fw, $c) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $c;
+}
+.link {
+  margin: 30px 0;
+  .container {
+    p {
+      border-top: 1px $color-border solid;
+      border-bottom: 1px $color-border solid;
+      height: 60px;
+      align-items: center;
+      display: flex;
+      @include text($text-base, $text-3xl, $text-c1-dark);
+    }
+  }
+}
+.info {
+  .container {
+    .title {
+      h2 {
+        @include text($text-3xl, $text-semibold, $text-c1-dark);
+      }
+    }
+    .content-info {
+      .title-content {
+        padding: 0 16px;
+        background-color: #343a40;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        h3 {
+          @include text($text-2xl, $text-regular, $text-c1-title);
+        }
+      }
+      .form-info {
+        border-right: 1px $color-border solid;
+        border-left: 1px $color-border solid;
+        padding: 10px 16px;
+        .row {
+          .col-6 {
+            .form-group {
+              .err-mess {
+                color: $text-c1-err;
+              }
+            }
+          }
+        }
+      }
+    }
+    .button-click {
+      background-color: #dddddd;
+      padding: 10px 16px;
+      border: 1px $color-border solid;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .form-search {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      .form-control {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      .btn {
+        border: 1px solid #ced4da;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    }
+  }
+}
+
+.table {
+  margin: 30px 0;
+  .container {
+    thead {
+      background-color: #708090;
+      @include text($text-2xl, $text-regular, $text-c1-title);
+    }
+  }
+}

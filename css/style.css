@@ -1,0 +1,81 @@
+/*-----------text: css cho text--------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.link {
+  margin: 30px 0;
+}
+.link .container p {
+  border-top: 1px #c0c0c0 solid;
+  border-bottom: 1px #c0c0c0 solid;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: 30px;
+  color: #000;
+}
+
+.info .container .title h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+.info .container .content-info .title-content {
+  padding: 0 16px;
+  background-color: #343a40;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.info .container .content-info .title-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffd700;
+}
+.info .container .content-info .form-info {
+  border-right: 1px #c0c0c0 solid;
+  border-left: 1px #c0c0c0 solid;
+  padding: 10px 16px;
+}
+.info .container .content-info .form-info .row .col-6 .form-group .err-mess {
+  color: #ff0000;
+}
+.info .container .button-click {
+  background-color: #dddddd;
+  padding: 10px 16px;
+  border: 1px #c0c0c0 solid;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.info .container .form-search {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.info .container .form-search .form-control {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.info .container .form-search .btn {
+  border: 1px solid #ced4da;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.table {
+  margin: 30px 0;
+}
+.table .container thead {
+  background-color: #708090;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffd700;
+}
